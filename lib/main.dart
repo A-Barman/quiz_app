@@ -6,8 +6,8 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: <Widget>[
+        body: Stack(
+          children: [
             Gradientcontainer(
               Color.fromARGB(255, 127, 11, 189),
               Color.fromARGB(255, 4, 95, 148),
