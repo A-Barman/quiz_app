@@ -12,26 +12,30 @@ class Homepage extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/quiz-logo.png',
-            width: 300,
-            height: 300,
+            width: 320,
+            height: 320,
           ),
           const SizedBox(
-            height: 40,
+            height: 90,
           ),
           const StyledText("Learn Flutter the fun way!"),
           const SizedBox(
             height: 30,
           ),
-          FilledButton(
-            onPressed: () {},
-            style: FilledButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 44, 103, 229),
-              textStyle: const TextStyle(
-                fontSize: 25,
+          SizedBox(
+            width: 150,
+            height: 40,
+            child: OutlinedButton(
+              onPressed: () {},
+              style: FilledButton.styleFrom(
+                foregroundColor: Colors.white,
+                textStyle: const TextStyle(
+                  fontSize: 25,
+                ),
               ),
+              child: const Text('Start Quiz'),
             ),
-            child: const Text('Start Quiz'),
-          ),
+          )
         ],
       ),
     );
