@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/styled_text.dart';
+import 'package:quiz_app/start_screen/styled_text.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
