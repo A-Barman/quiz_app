@@ -12,7 +12,7 @@ void main() {
               Color.fromARGB(255, 127, 11, 189),
               Color.fromARGB(255, 4, 95, 148),
             ),
-            Homepage(),
+            StartScreen(),
           ],
         ),
       ),
