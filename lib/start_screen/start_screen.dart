@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/styled_text.dart';
+import 'package:quiz_app/start_screen/styled_text.dart';
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+class StartScreen extends StatelessWidget {
+  const StartScreen({super.key});
 
   @override
   Widget build(context) {
@@ -23,9 +23,9 @@ class Homepage extends StatelessWidget {
             height: 30,
           ),
           SizedBox(
-            width: 150,
+            width: 175,
             height: 40,
-            child: OutlinedButton(
+            child: OutlinedButton.icon(
               onPressed: () {},
               style: FilledButton.styleFrom(
                 foregroundColor: Colors.white,
@@ -33,7 +33,8 @@ class Homepage extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
-              child: const Text('Start Quiz'),
+              icon: const Icon(Icons.arrow_right_alt),
+              label: const Text('Start Quiz'),
             ),
           )
         ],
