@@ -5,11 +5,11 @@ class Questions extends StatefulWidget {
 
   @override
   State<Questions> createState() {
-    return _Questions();
+    return _QuestionsState();
   }
 }
 
-class _Questions extends State<Questions> {
+class _QuestionsState extends State<Questions> {
   @override
   Widget build(constext) {
     return const MaterialApp(
