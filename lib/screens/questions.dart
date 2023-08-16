@@ -12,10 +12,6 @@ class Questions extends StatefulWidget {
 class _QuestionsState extends State<Questions> {
   @override
   Widget build(constext) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Text('Questions'),
-      ),
-    );
+    return const Text ('QuestionsScreen');
   }
 }
