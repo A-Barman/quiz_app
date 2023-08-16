@@ -31,7 +31,7 @@ class _QuestionsState extends State<Questions> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
-            ...currentQuestion.anwsers.map((answer) {
+            ...currentQuestion.getShuffledAnswers().map((answer) {
               return AnswerButton(answer, () {});
             }),
           ],
