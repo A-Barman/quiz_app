@@ -15,35 +15,27 @@ class Questions extends StatefulWidget {
 class _QuestionsState extends State<Questions> {
   @override
   Widget build(constext) {
-    final currentQuestion = questions [0];
+    final currentQuestion = questions[0];
 
     return SizedBox(
       width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            currentQuestion.text,
-            style: const TextStyle(color: Color.fromARGB(255, 255, 231, 150)),
-          ),
-          const SizedBox(height: 30),
-          AnswerButton(
-            currentQuestion.anwsers[0],
-            () {},
-          ),
-          AnswerButton(
-            currentQuestion.anwsers[1],
-            () {},
-          ),
-          AnswerButton(
-            currentQuestion.anwsers[2],
-            () {},
-          ),
-          AnswerButton(
-            currentQuestion.anwsers[3],
-            () {},
-          ),
-        ],
+      child: Container(
+        margin: const EdgeInsets.all(40),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              currentQuestion.text,
+              style: const TextStyle(color: Color.fromARGB(255, 255, 231, 150)),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 30),
+            ...currentQuestion.anwsers.map((answer) {
+              return AnswerButton(answer, () {});
+            }),
+          ],
+        ),
       ),
     );
   }
