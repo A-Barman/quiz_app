@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/screens/questions.dart';
 import 'package:quiz_app/start_screen/start_screen.dart';
-import 'package:quiz_app/start_screen/gradient_container.dart';
+import 'package:quiz_app/background/gradient_container.dart';
 
 class Quiz extends StatefulWidget{
   const Quiz({super.key});
