@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/screens/questions_screen.dart';
-import 'package:quiz_app/start_screen/start_screen.dart';
-import 'package:quiz_app/background/gradient_container.dart';
+import 'package:quiz_app/screens/results_screen.dart';
+import 'package:quiz_app/screens/start_screen.dart';
+import 'package:quiz_app/styled_widgets/gradient_container.dart';
 
 class Quiz extends StatefulWidget{
   const Quiz({super.key});
@@ -36,7 +37,7 @@ void chooseAnswer(String answer) {
   if (selectedAnswers.length == questions.length){
     setState(() {
       selectedAnswers = [];
-      activeScreen = StartScreen(switchScreen);
+      activeScreen = const ResultScreen();
     });
   }
 }
